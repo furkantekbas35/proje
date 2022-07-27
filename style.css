@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    visibility: hidden;
+    visibility:hidden;
 }
 
 .modal-content {
@@ -28,4 +28,8 @@
     padding-left: 25px;
     padding-top: 20px;
     color: #fff;
+}
+
+.open_popup {
+    visibility: visible;
 }

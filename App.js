@@ -56,7 +56,7 @@ var map = new ol.Map({
 
 var typeSelect = document.getElementById('type');
 
-var draw; // global so we can remove it later
+var draw;
 function addInteraction(element) {
   var value = element.value;
   if (value !== 'None') {
@@ -68,14 +68,11 @@ function addInteraction(element) {
   }
 }
 
-/**
- * Handle button clicks.
- */
 function handleBtnClick() {
   var element = this;
   map.removeInteraction(draw);
   addInteraction(element);
-  //    return false;
+ 
 };
 document.getElementById("Point").addEventListener('click', handleBtnClick);
 document.getElementById("Polygon").addEventListener('click', handleBtnClick);

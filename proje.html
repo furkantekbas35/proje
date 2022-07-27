@@ -81,7 +81,7 @@
     <button class="content_button2" value="Point" id="Point"> Point</button>
     <button class="content_button3" value="LineString" id="LineString"> LineString </button>
     <button class="content_nonebutton" value="None" id="None"> None </button>
-    <button class="content_editbutton">Edit</button>
+    <button class="content_editbutton" onclick="openPopup()">Edit</button>
 </div>
 
 
@@ -96,7 +96,7 @@
   </form>
 </div>
 
-<div class="bg-modal">
+<div class="bg-modal" id="popup">
   <div class="modal-content">
     <div class="content">
       <img class="content_img" src="belsis.jpg">
@@ -115,6 +115,12 @@
   </div>
 </div>
 
+<script>
+  let popup = document.getElementById("popup");
+  function openPopup() {
+    popup.classList.add("open_popup");
+  }
+</script>
 
 <script type="module" src="App.js" ></script>
 
